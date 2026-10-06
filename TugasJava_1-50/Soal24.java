@@ -1,0 +1,14 @@
+public class Soal24 {
+    public static void main(String[] args) {
+        int awal = 2000;
+        int akhir = 2030;
+
+        System.out.println("Tahun kabisat dengan angka terakhir 0:");
+        for (int tahun = awal; tahun <= akhir; tahun++) {
+            if (tahun % 10 == 0 &&
+                (tahun % 400 == 0 || (tahun % 4 == 0 && tahun % 100 != 0))) {
+                System.out.print(tahun + " ");
+            }
+        }
+    }
+}
